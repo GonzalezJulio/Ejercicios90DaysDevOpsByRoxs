@@ -22,5 +22,31 @@ Busca mejorar la **colaboración entre los equipos**, reducir errores, disminuir
 - **Prometheus**
 - **Grafana**
 
-> 💡 ¡Una muy buena base para seguir avanzando en tu camino DevOps!
+## 2. 🖥️ Primeros Pasos en Linux
+
+En esta sección se muestran los primeros comandos ejecutados en un entorno Linux.
+
+### 📸 Capturas de pantalla
+
+#### 🔹 Commandos Basicos de Linux
+
+![Commandos Basicos de Linux1](img/90DiasDevOps_Dia_1_1.png)
+
+
+![Commandos Basicos de Linux2](img/90DiasDevOps_Dia_1_2.png)
+
+
+## 3. 🎯 Desafío: ¡Linux Detectives!
+
+### 👉 ¿Cuánto tiempo lleva encendido tu sistema?
+
+![ Uptime Maquina Local](img/90DiasDevOps_Dia_1_5.png)
+
+### 👉 ¿Qué procesos están consumiendo más recursos?
+
+![Consumo de recursos](img/90DiasDevOps_Dia_1_6.png)
+
+### 👉 ¿Cuánta memoria disponible tenés?
+
+![Memoria Disponible](img/90DiasDevOps_Dia_1_7.png)
 
