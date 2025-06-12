@@ -6,7 +6,7 @@
 
 ![Instalacion de Nginx](img/90DiasDevOps_Dia_2_2.png)
 
-### Se produjo un error al iniciar Nginx porque otro servicio (Apache2) ya estaba utilizando el mismo puerto (por defecto, el 80). La solución fue detener el servicio de Apache2 y luego iniciar Nginx correctamente.
+#### Se produjo un error al iniciar Nginx porque otro servicio (Apache2) ya estaba utilizando el mismo puerto (por defecto, el 80). La solución fue detener el servicio de Apache2 y luego iniciar Nginx correctamente.
 
 ![Instalacion de Nginx](img/90DiasDevOps_Dia_2_3.png)
 
@@ -28,7 +28,7 @@
 
 ## 📚 Tarea Opcional del Día 2
 
-#### 🛠️ 1. Exploración básica
+### 🛠️ 1. Exploración básica
 
 ![Exploracion básica](img/90DiasDevOps_Dia_2_7.png)
 
@@ -38,10 +38,25 @@
 
 ![Exploracion básica](img/90DiasDevOps_Dia_2_10.png)
 
-#### 📂 2. Crea y manipulá archivos
+### 📂 2. Crea y manipulá archivos
 
 ![Crear Archivos](img/90DiasDevOps_Dia_2_12.png)
 
+
+### 👥 3. Usuarios y permisos
+
+![Crear Usuario](img/90DiasDevOps_Dia_2_13.png)
+
+![Crear Usuario](img/90DiasDevOps_Dia_2_15.png)
+
+### 🔐 4. Buscá archivos con permisos peligrosos
+
+![Permisos](img/90DiasDevOps_Dia_2_14.png)
+
+
+### 🧠 5. Reto de comprensión
+
+#### En el siguiente commando sirve para cambiar los permiso, dependiendo del usuario. Si es propietario tiene rwx, si es grupo rx, otros no tiene permiso.
 
 
 
