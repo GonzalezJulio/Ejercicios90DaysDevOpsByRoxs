@@ -1,0 +1,13 @@
+Vagrant.configure("2") do |config|
+         config.vm.box = "ubuntu/bionic64"
+       
+         # IP privada dentro del rango permitido
+         config.vm.network "private_network", ip: "192.168.33.20"
+       
+         # Sincroniza la carpeta local 'template' dentro de /home/vagrant/template
+         config.vm.synced_folder "template/", "/home/vagrant/template"
+       
+         # Provisiona con tu script
+         config.vm.provision "shell", path: "bootstrap.sh"
+       end
+       
