@@ -1,0 +1,9 @@
+---
+- name: Desplegar Servidor Web Completo
+  hosts: webserver1
+  become: yes
+
+  roles:
+    - nginx
+    - usuario
+    - firewall

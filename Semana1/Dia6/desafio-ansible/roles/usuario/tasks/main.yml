@@ -1,0 +1,15 @@
+---
+- name: Crear usuario devops
+  user:
+    name: "{{ usuario_devops }}"
+    state: present
+    shell: /bin/bash
+    groups: sudo
+
+- name: Permitir sudo sin contraseña
+  copy:
+    dest: "/etc/sudoers.d/{{ usuario_devops }}"
+    content: "{{ usuario_devops }} ALL=(ALL) NOPASSWD:ALL"
+    owner: root
+    group: root
+    mode: 0440

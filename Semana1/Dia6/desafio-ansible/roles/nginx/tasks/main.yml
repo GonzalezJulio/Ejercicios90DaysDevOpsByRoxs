@@ -1,0 +1,17 @@
+---
+- name: Instalar Nginx
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Copiar página de inicio personalizada
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+
+- name: Asegurar que Nginx esté iniciado
+  service:
+    name: nginx
+    state: started
+    enabled: yes
