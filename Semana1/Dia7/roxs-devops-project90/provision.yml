@@ -1,0 +1,44 @@
+---
+- name: Provisionar la máquina con dependencias
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Actualizar apt
+      apt:
+        update_cache: yes
+
+    - name: Instalar dependencias básicas
+      apt:
+        name:
+          - python3-pip
+          - python3-venv
+          - python3-dev
+          - build-essential
+          - curl
+          - gnupg
+        state: present
+
+    - name: Instalar Node.js 20.x
+      shell: |
+        curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+        apt-get install -y nodejs
+
+    - name: Instalar Redis
+      apt:
+        name: redis-server
+        state: present
+
+    - name: Instalar PostgreSQL
+      apt:
+        name: postgresql
+        state: present
+
+    - name: Asegurarse de que Redis y PostgreSQL estén activos
+      service:
+        name: "{{ item }}"
+        state: started
+        enabled: yes
+      loop:
+        - redis-server
+        - postgresql
