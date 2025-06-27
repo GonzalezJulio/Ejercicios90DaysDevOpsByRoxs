@@ -90,10 +90,7 @@ Contraseña: `pass`
 Se creó el archivo `books.json` con este contenido:
 
 ```json
-[
-  { "title": "Docker in Action, Second Edition", "author": "Jeff Nickoloff and Stephen Kuenzli" },
-  { "title": "Kubernetes in Action, Second Edition", "author": "Marko Lukša" }
-]
+[{ "title": "Docker in Action, Second Edition", "author": "Jeff Nickoloff and Stephen Kuenzli" },{ "title": "Kubernetes in Action, Second Edition", "author": "Marko Lukša" }]
 ```
 
 Se importó con:
