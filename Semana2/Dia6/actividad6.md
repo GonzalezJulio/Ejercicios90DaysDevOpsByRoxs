@@ -96,3 +96,9 @@ docker compose down -v
 ## ✨ Resultado
 
 Este ejercicio refuerza el uso de **Docker Compose** para levantar entornos de desarrollo completos, conectando múltiples servicios (frontend, backend y base de datos) con facilidad.
+
+
+### Imagenes del proyecto
+
+![ejercicio](img/90DiasDevOps_Dia_13_1.png)
+![ejercicio](img/90DiasDevOps_Dia_13_2.png)
