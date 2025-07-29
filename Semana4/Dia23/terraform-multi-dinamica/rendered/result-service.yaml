@@ -1,0 +1,13 @@
+service:
+  name: result
+  app: roxs-voting-app
+  environment: dev
+  language: node
+  memory: 128MB
+  port: 5001
+  health_check: /status
+  env:
+    API_KEY: "secret"
+  tags:
+    managed_by: "terraform"
+    owner: "julio"

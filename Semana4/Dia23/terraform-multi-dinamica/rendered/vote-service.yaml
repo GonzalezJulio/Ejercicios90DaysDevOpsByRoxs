@@ -1,0 +1,14 @@
+service:
+  name: vote
+  app: roxs-voting-app
+  environment: dev
+  language: python
+  memory: 256MB
+  port: 5000
+  health_check: /healthz
+  env:
+    DB_HOST: "db"
+    REDIS_HOST: "redis"
+  tags:
+    managed_by: "terraform"
+    owner: "julio"
