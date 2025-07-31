@@ -48,3 +48,5 @@ coverage/
 __pycache__/
 node_modules/
 .env
+.terraform/
+.terraform.lock.hcl
