@@ -1,3 +1,5 @@
+Dia23/
+
 # Ignorar todos los estados locales de Terraform
 *.tfstate
 *.tfstate.backup
