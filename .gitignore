@@ -1,0 +1,48 @@
+# Ignorar todos los estados locales de Terraform
+*.tfstate
+*.tfstate.backup
+
+# Ignorar archivos de configuración personal de Terraform
+.terraform/
+
+.crash/
+.terraform.lock.hcl
+
+# Ignorar archivos que contengan variables sensibles
+*.tfvars
+*.tfvars.json
+
+# Ignorar archivos de salida generados por Terraform
+*.json
+*.yaml
+*.yml
+*.txt
+*.out
+
+# Ignorar proveedores descargados de gran tamaño
+**/terraform-provider-*
+
+# Ignorar binarios
+*.exe
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# Ignorar archivos temporales
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Ignorar configuración de IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Ignorar directorios de pruebas o runners locales (si usás GitHub Actions o Docker)
+runner/
+coverage/
+__pycache__/
+node_modules/
+.env
