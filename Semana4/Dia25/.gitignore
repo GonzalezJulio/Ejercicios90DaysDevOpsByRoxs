@@ -1,26 +1,62 @@
-# Ignorar todos los archivos de estado de Terraform
-**/terraform.tfstate
-**/terraform.tfstate.backup
+# ─────────────────────────────────────────────
+# Terraform
+# ─────────────────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+terraform.tfvars
+terraform.tfplan
+.terraform.lock.hcl
 
-# Ignorar archivos de variables sensibles
-**/terraform.tfvars
-
-# Ignorar archivos generados en soluciones
-terraform-challenges/solutions/
-
-# Ignorar carpetas de salida generadas por los desafíos
-**/environments/
-**/outputs/
-**/*.json
-
-# Archivos de salida temporales o logs
+# ─────────────────────────────────────────────
+# Docker
+# ─────────────────────────────────────────────
 *.log
-*.out
+*.pid
+docker-compose.override.yml
 
-# Archivos de backup comunes
-*~
-*.bak
+# Evitar subir volúmenes montados
+volumes/
+data/
+pgdata/
+redisdata/
 
-# Archivos del sistema
+# ─────────────────────────────────────────────
+# Archivos temporales del sistema
+# ─────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# ─────────────────────────────────────────────
+# Archivos de sistema Linux/IDE
+# ─────────────────────────────────────────────
+*~
+*.swp
+*.swo
+*.bak
+
+# VSCode
+.vscode/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos grandes accidentalmente cacheados
+*.zip
+*.tar.gz
+*.tgz
+
+# Git sensitive folders
+.env
+.env.*
+.envrc
