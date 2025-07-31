@@ -1,4 +1,4 @@
-Dia23/
+
 
 # Ignorar todos los estados locales de Terraform
 *.tfstate
@@ -50,3 +50,5 @@ node_modules/
 .env
 .terraform/
 .terraform.lock.hcl
+
+
