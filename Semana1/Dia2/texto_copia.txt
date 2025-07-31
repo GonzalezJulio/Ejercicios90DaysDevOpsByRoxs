@@ -1,2 +1,0 @@
-
-Hola Mundo, estoy es un ejemplo de copia de archivos por SSH. Saludos
